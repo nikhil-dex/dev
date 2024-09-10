@@ -4,11 +4,28 @@ body, html {
     height: 100%;
     overflow: hidden;
 }
-button {
-    pointer-events: auto; /* Ensure button is clickable */
+
+
+.btn{
+    z-index: 10;
+    cursor: pointer;
+    position: relative;
+    
 }
-
-
-
-
-
+#Rotate img{
+    width: 300px;
+}
+@media screen and (max-width: 768px) {
+    #toggle{
+        width: 300px;
+        height: 300px;
+    }
+    #Rotate img{
+        width: 200px;
+    }
+    #btnA,#btnB,#btnC,#btnD{
+        border: none;
+        height: 150px;
+    }
+   
+}

@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Outlet, Link } from "react-router-dom";
 import "../NavBar/NavBar.css"
 
@@ -6,9 +6,13 @@ const NavBar = () => {
   return (
     <>
     <header>
-    <nav className="navbar navbar-expand-sm bg-dark navbar-dark px-3">
-      <div className="container-fluid">
+   
+    <p className="z-2 text-secondary position-absolute">Looking good today :)</p>
+    <nav className="navbar bg-light navbar-expand-sm navbar-light px-3">
+      
+      <div className="container-fluid text-center">
         <Link id="liO" className="navbar-brand" to="/"><img src="../images/noyau.jpeg" alt="Noyau" width={35} class="rounded-circle" /></Link>
+       
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse"     data-bs-target="#collapsibleNavbar">
           <span className="navbar-toggler-icon"></span>
         </button>

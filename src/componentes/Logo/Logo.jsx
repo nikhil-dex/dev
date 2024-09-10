@@ -1,4 +1,4 @@
-import React from 'react'
+
 import styled from "styled-components";
 import "../Logo/Logo.css";
 import { useNavigate } from 'react-router-dom';
@@ -32,8 +32,9 @@ const Logo = () => {
   },10)
   return (
     <Noyaubase className="d-flex justify-content-center allign-items-center">
-    <NoyauToggle>
-      <RotateButton href="/Base" onClick={goToBasePage} id="btnA">
+    <NoyauToggle id="toggle">
+      <RotateButton className='anchor' href="/Base" id="btnA">
+      
       
         <button onClick={goToBasePage} className="btn text-light"><RiHome7Fill style={{fontSize: 35}}/></button>
       
@@ -49,8 +50,8 @@ const Logo = () => {
       </RotateButton>
      
 
-    <NoyauRotate>
-      <img className="rounded-circle" src="../images/noyau.jpeg" alt="" width={300} />
+    <NoyauRotate id="Rotate">
+      <img className="rounded-circle" src="../images/noyau.jpeg" alt="noyau"/>
     </NoyauRotate>
     
     </NoyauToggle>
@@ -58,15 +59,19 @@ const Logo = () => {
   )
 }
 const RotateButton = styled.a`
-position: absolute;
-border-top-right-radius: 15%;
-border-top-left-radius: 15%;
-text-align: center;
-background-color: #1f1e25;
-height: 200px;
-width: 100px;
-transform-origin: bottom;
-border: 1px solid white;
+  position: absolute;
+    z-index: 4; 
+    border-top-right-radius: 15%;
+    border-top-left-radius: 15%;
+    text-align: center;
+   
+    height: 200px;
+    width: 100px;
+    transform-origin: bottom;
+    border-top: 1px solid white;
+    cursor: pointer;
+    color: white;
+    padding-top: 5px;
 
 `;
 const NoyauToggle = styled.div`
@@ -80,9 +85,10 @@ display: flex;
 justify-content: center;
 
 
+
 /* align-items: center; */
 #btnA{
-  z-index: 1;
+  z-index: 5;
   animation: heA .9s linear .5s;
 }
 #btnB{
@@ -166,13 +172,14 @@ align-items: center;
 position: absolute;
 width: 100%;
 height: 100%;
-background: linear-gradient(45deg, #000000, #434343);
+background: linear-gradient(45deg, #000000,#434343);
 background-size: 400% 400%;
 animation: gradientAnimation 10s ease infinite;
 
 @keyframes gradientAnimation {
     0% {
         background-position: 0% 0%;
+        
     }
     50% {
         background-position: 100% 100%;

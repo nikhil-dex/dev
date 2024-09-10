@@ -1,0 +1,22 @@
+.col-5 ul li a{
+    text-decoration: none;
+    color: grey;
+
+}
+#rotateLogo{
+    width: 80px;
+    cursor: pointer;
+    /* animation: rotating 3s linear; */
+}
+
+  
+    
+
+@keyframes rotating {
+    from{
+        transform: rotateZ(0deg);
+    }    
+    to{
+        transform: rotateZ(360deg);
+    }
+}

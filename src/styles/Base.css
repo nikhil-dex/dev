@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+#container{
+    background: url("https://cdn.wallpapersafari.com/3/99/7cPhMl.jpg") no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    height: 200px;
+    filter: grayscale(80%);
+    transition: all .5s ease;
+}
+#container:hover{
+    height: 210px;
+    filter: grayscale(0%);
+
+}
+#container h1{
+    color: #6c757d;
+    font-family: "Rajdhani", sans-serif;
+    font-size: 150px;
+    font-weight: 100;
+    line-height: 1.5;
+    transition: all .5s ease-in;
+    font-weight: 400;
+
+}
+#container:hover > h1{
+    font-size: 145px;
+    color: white;
+}
+
+#blink{
+    opacity: 1;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: blinker 2s linear infinite;
+}
+@keyframes blinker {
+    from{
+        opacity: 0;
+    }
+    60%{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+@media screen and (max-width: 768px) {
+    #container h1{
+        line-height: 1.2;
+        font-size: 6rem;
+    }
+    #container:hover > h1{
+        color: white;
+        font-size: 6rem;
+    }
+}

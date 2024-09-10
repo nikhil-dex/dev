@@ -4,13 +4,17 @@ header{
 }
 header nav{
     border-radius: 25px;
+    background: linear-gradient(45deg, #f0f0f0,#f4f4f4);
     
 }
+
 #liO{
+    
     position: none;
     animation: animeD 2.5s ease-in;
 }
 #liA{
+  
     position: none;
     animation: anime 1s ease-in;
 }
@@ -59,4 +63,18 @@ header nav{
         opacity: 1;
     }
     
+}
+#liA :hover,#liB :hover,#liC :hover,#liD :hover{
+    color: red;
+
+}
+header p{
+    opacity: 0;
+}
+@media screen and (max-width: 448px) {
+    header p{
+        top: 30px;
+        left: 30%;
+        opacity: 1;
+    }
 }
