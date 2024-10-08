@@ -1,3 +1,8 @@
+#footer{
+    position: relative;
+    background: white;
+    z-index: 2;
+}
 .col-5 ul li a{
     text-decoration: none;
     color: grey;
@@ -8,8 +13,40 @@
     cursor: pointer;
     /* animation: rotating 3s linear; */
 }
-
-  
+#rotateLogoIMG{
+    width: 150px;
+    animation: float 2s infinite ease-in-out;
+    cursor: pointer;
+}
+.QuickLinks{
+    width: fit-content;
+    transition: all .5s ease;
+}
+.QuickLinks:hover{
+    transform: scaleX(1.1) scaleY(1.1);
+}
+.QuickLinks li:hover{
+    background: rgb(215, 215, 215);
+    border-radius: 5%;
+}
+@media screen and (max-width: 768px) {
+    #rotateLogoIMG{
+        width: 80px;
+    }
+    
+}
+@keyframes float {
+    from{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-5px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+    
+}
     
 
 @keyframes rotating {
@@ -19,4 +56,7 @@
     to{
         transform: rotateZ(360deg);
     }
+}
+#topbtn:hover{
+    color: red;
 }

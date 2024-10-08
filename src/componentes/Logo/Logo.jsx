@@ -34,8 +34,6 @@ const Logo = () => {
     <Noyaubase className="d-flex justify-content-center allign-items-center">
     <NoyauToggle id="toggle">
       <RotateButton className='anchor' href="/Base" id="btnA">
-      
-      
         <button onClick={goToBasePage} className="btn text-light"><RiHome7Fill style={{fontSize: 35}}/></button>
       
       </RotateButton>
@@ -172,7 +170,7 @@ align-items: center;
 position: absolute;
 width: 100%;
 height: 100%;
-background: linear-gradient(45deg, #000000,#434343);
+background: linear-gradient(80deg, #000000,#434343);
 background-size: 400% 400%;
 animation: gradientAnimation 10s ease infinite;
 
@@ -183,6 +181,7 @@ animation: gradientAnimation 10s ease infinite;
     }
     50% {
         background-position: 100% 100%;
+        
     }
     100% {
         background-position: 0% 0%;

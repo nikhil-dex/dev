@@ -29,7 +29,7 @@ const Footer = () => {
     }
   return (
     <>
-    <footer>
+    <footer id="footer">
         <div className="container-fluid border-rounded rounded-3 border-top border-dark mt-3 p-3">
             <div className="row">
                 <div className="col border-end d-flex flex-column">
@@ -40,12 +40,12 @@ const Footer = () => {
                 </div>
                 <div className="col-3 border-bottom">
                     <div id="rotateLogo" onClick={toss} >
-                    <img width="80px" className="rounded-circle z-6"  src="/images/noyau.jpeg" alt="Noyau" />
+                    <img id="rotateLogoIMG" className="rounded-circle z-6"  src="/images/noyau.jpeg" alt="Noyau" />
                     </div>
                 </div>
-                <div className="col border-bottom">
+                <div className="col border-bottom ">
                     <h3>Quick Way</h3>
-                    <ul>
+                    <ul className="QuickLinks">
                         <li><a href="/Base">Base</a></li>
                         <li><a href="/Community">Community</a></li>
                         <li><a href="/OurLab">Our Labs</a></li>
@@ -56,7 +56,7 @@ const Footer = () => {
                 </div>
                 <div className="col ">
                     <h3>Social Handels</h3>
-                    <ul className="d-flex flex-column justify-content-center">
+                    <ul className="d-flex flex-column justify-content-center  QuickLinks">
                         <li><a href="#"><VscGithubAlt/></a></li>
                         <li><a href="#"><RiInstagramLine /></a></li>
                         <li><a href="#"><RxDiscordLogo/></a></li>
@@ -65,7 +65,7 @@ const Footer = () => {
                 <div className="col border-start d-flex justify-content-center align-items-center ">
                     <div className="border-rounded rounded-circle border border-dark p-2">
 
-                    <a href="#top"><BiSolidUpArrow style={{fontSize: 30}} /></a>
+                    <a id="topbtn" href="#top"><BiSolidUpArrow style={{fontSize: 30}} /></a>
                     </div>
                 </div>
             </div>
