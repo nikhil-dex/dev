@@ -1,0 +1,51 @@
+
+#main{
+    background: black;
+    z-index: 3;
+    overflow: hidden;
+   
+}
+#divider #lineA{
+    position: absolute;
+    width: 2px;
+    background: white;
+    height: 15%;
+    z-index: 1;
+}
+#divider{
+    display: flex;
+    justify-content: end;
+    margin-right: 100px;
+    margin-top: 0;
+}
+#dividerA #lineB{
+    position: absolute;
+    width: 2px;
+    background: black;
+    height:67%;
+    top: 290px;
+    z-index: 2;
+}
+#dividerA{
+    display: flex;
+    justify-content: end;
+    margin-right: 100px;
+    margin-top: 0;
+}
+
+@media screen and (max-width: 725px) {
+    
+    #divider #lineA{
+        height: 35%;
+    }
+    #dividerA #lineB{
+        height: 44%;
+        top: 365px;
+    
+    }
+}
+#footer{
+    z-index: 5;
+    background: white;
+   
+}

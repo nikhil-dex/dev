@@ -1,0 +1,123 @@
+.hidden-box{
+    margin: 5px 0 0 0;
+    background: black;
+    height: 25em;
+    overflow: hidden;
+}
+.layer1{
+    margin-top: 2px;
+
+    top: 20em;
+    right: 30em;
+    width: 70em;
+    height: 70em;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    z-index: 0;
+   
+    
+    
+
+}
+
+@media screen and (max-width: 725px) {
+    .hidden-box{
+       
+        height: 15em;
+        overflow: hidden;
+    }
+    #toggle{
+        position: relative;
+        right: 10em;
+        width: 25em;
+        height: 25em;
+    
+    }
+    
+}
+
+
+#btn1E{
+    transform: rotateZ(-20deg);
+    animation: heE .9s linear .5s;
+    top: 170px;
+}
+#btn1A{
+    animation: heA .9s linear .5s;
+    transform: rotateZ(-10deg);
+    top: 60px;
+}
+#btn1B{
+    transform: rotateZ(0deg);
+    animation: heB .9s linear .5s;
+}
+#btn1C{
+    transform: rotateZ(10deg);
+    animation: heC .9s linear .5s;
+    top: 60px;
+}
+#btn1D{
+    transform: rotateZ(20deg);
+    animation: heD .9s linear .5s;
+    top: 170px;
+  }
+  #btn1E,#btn1A,#btn1B,#btn1C,#btn1D{
+    transition: all 1s ease-in-out;
+  }
+  @keyframes heE {
+    from{
+        opacity: 0;
+        transform: rotateZ(0deg);
+      }
+      to{
+        opacity: 1;
+        transform: rotateZ(-20deg);
+      }
+  }
+  @keyframes heA {
+    from{
+      opacity: 0;
+      transform: rotateZ(0deg);
+    }
+    to{
+      opacity: 1;
+      transform: rotateZ(-10deg);
+    }
+  }
+  @keyframes heB {
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+  }
+  @keyframes heC {
+    from{
+      transform: rotateZ(0deg);
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+      transform: rotateZ(10deg);
+    }
+  }
+  @keyframes heD {
+    from{
+      opacity: 0;
+      transform: rotateZ(0deg);
+    }
+    to{
+      opacity: 1;
+      transform: rotateZ(20deg);
+    }
+  }
+  #btn1E:hover, #btn1A:hover, #btn1B:hover, #btn1C:hover, #btn1D:hover{
+    width: 120px;
+  }
+  
+  
+  
+
+  
